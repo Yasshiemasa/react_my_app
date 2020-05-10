@@ -1,17 +1,36 @@
 //必須
-import React, { Component } from 'react';
+import React from 'react';
 
-//Appクラス = Appコンポーネント(カスタムタグ)
-class App extends Component {
-  render() {
-   return (
-   <React.Fragment>
-     <label htmlFor="bar">bar</label>
-     <input type="text" onChange={() => {console.log("I am clicked")}} />
-   </React.Fragment>
-   )
-  }
+// //Appクラス = Appコンポーネント(カスタムタグ)
+// class App extends Component {
+//   render() {
+//    return (
+//    <React.Fragment>
+//      <label htmlFor="bar">bar</label>
+//      <input type="text" onChange={() => {console.log("I am clicked")}} />
+//    </React.Fragment>
+//    )
+//   }
+// }
+
+const App = () => {
+  return (
+    <div>
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+      <Cat />
+    </div>
+  )
 }
+
+const Cat = () => {
+  return <div>Meow!</div>
+}
+
+
+
 //他の場所で読み込んで使えるようにexport
 export default App;
 
