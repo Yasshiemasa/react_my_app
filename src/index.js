@@ -13,9 +13,13 @@ const store = createStore(reducer);
 
 //(id="root"のところに)描画
 ReactDOM.render(
-  <App />,
+  <Provider store={ store }>
+    <App />
+  </Provider>,
+  
   document.getElementById('root'));
-registerServiceWorker();
+
+  registerServiceWorker();
 
 // // If you want your app to work offline and load faster, you can change
 // // unregister() to register() below. Note this comes with some pitfalls.

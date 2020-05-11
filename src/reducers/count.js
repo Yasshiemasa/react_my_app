@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from '../actions'
+import { INCREMENT, DECREMENT } from './action/registerServiceWorker'
 
 const initialState = { value : 0 }
 
@@ -12,3 +12,5 @@ export default (state=initialState, action) => {
             return state
     }
 }
+
+
